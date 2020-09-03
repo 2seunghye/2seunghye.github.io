@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Practice using the API
-tag: NodeJS, Express
+tag: NodeJS Express
 ---
 
 asdfasdfadfadf
