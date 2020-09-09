@@ -36,7 +36,7 @@ tag: CSS
 <style>
     .container {
         width: 400px;
-        height: 305px;
+        height: 306px;
         border: 1px solid #333;
     }
 
@@ -117,8 +117,8 @@ inline이라는 말 그대로, 같은 직선에 요소들이 놓여있는 것이
 
 <style>
     .inline-container {
-        width: 300px;
-        height: 22px;
+        width: 330px;
+        height: 30px;
         border: 1px solid #333;
     }
 
