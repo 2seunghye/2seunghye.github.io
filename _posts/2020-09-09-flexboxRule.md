@@ -44,7 +44,7 @@ flex container를 만들어주는 것이다
 
     .box {
         position: relative;
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -98,7 +98,7 @@ position 속성 중 하나인 **justify-content**를 사용하는 것
     }
 
     .flex-item {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -132,7 +132,7 @@ flex를 사용하면 browser가 스스로 계산을 해주기 때문!
     }
 
     .flex-item2 {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -163,7 +163,7 @@ flex를 사용하면 browser가 스스로 계산을 해주기 때문!
     }
 
     .flex-item3 {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -203,7 +203,7 @@ main axis에서는 justify-content를 사용하여 item을 움직일 수 있다
     }
 
     .flex-item4 {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -250,7 +250,7 @@ center property를 확인해 보았으니 stretch property를 적용해보자
     }
 
     .flex-item5 {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
     }
 </style>
@@ -284,7 +284,7 @@ stretch 속성을 사용하고 싶다면 아이템들의 height 값을 해제해
     }
 
     .flex-item6 {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -323,7 +323,7 @@ flex-start는 기본 값이기 때문에 굳이 쓰지 않아도 된다
     }
 
     .box-column {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -364,7 +364,7 @@ cross axis는 가로축이기 때문에 가로축을 기준으로 중간에 배�
     }
 
     .box-column2 {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -396,7 +396,7 @@ cross axis는 가로축이기 때문에 가로축을 기준으로 중간에 배�
     }
 
     .box-column3 {
-        background: blue;
+        background: #f9c00c;
         width: 100px;
         height: 100px;
     }
@@ -429,7 +429,7 @@ cross axis는 가로축이기 때문에 가로축을 기준으로 중간에 배�
     }
 
     .box-column4 {
-        background: blue;
+        background: #f9c00c;
         height: 100px;
     }
 </style>
