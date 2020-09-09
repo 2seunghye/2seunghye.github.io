@@ -219,11 +219,11 @@ inline-block을 사용하면, block이 서로 옆에 있을 수 있다
     }
 
     .problem:nth-child(2){
-        margin-left: 45px;
+        margin-left: 44.5px;
     }
 
     .problem:nth-child(3){
-        margin-left: 45px;
+        margin-left: 44.5px;
     }
 
     span{
