@@ -36,7 +36,7 @@ tag: CSS
 <style>
     .container {
         width: 400px;
-        height: 306px;
+        height: 308px;
         border: 1px solid #333;
     }
 
@@ -243,10 +243,10 @@ inline-block을 사용하면, block이 서로 옆에 있을 수 있다
 </style>
 
 우리가 만약 inline-block 아이템들을 적당한 간격으로 띄우기 위해  
-margin-left 값을 주었다고 생각해보자
+margin-left 값을 주었다고 생각해보자  
 저 요소를 감싸고 있는 container가 현재 나의 데스크탑이라고 하였을 때,  
-각 요소는 일정한 간격을 두고 잘 떨어져 있어 완벽해 보인다
-하지만 핸드폰으로 본다면?
+각 요소는 일정한 간격을 두고 잘 떨어져 있어 완벽해 보인다  
+하지만 핸드폰으로 본다면?  
 요소는 그대로 두고, container 박스 사이즈를 조절하여 확인해보자
 
 <div class="phone-container">
