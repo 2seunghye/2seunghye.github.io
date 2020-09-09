@@ -11,13 +11,13 @@ tag: CSS
 
 ## display: block
 
-```html
+```
 <div class="box">block 1</div>
 <div class="box">block 2</div>
 <div class="box">block 3</div>
 ```
 
-```css
+```
 .box {
   display: block;
   background: #0066ff;
@@ -37,7 +37,7 @@ tag: CSS
     .container {
         width: 400px;
         height: 304px;
-        border: 1px solid #fff;
+        border: 1px solid #333;
     }
 
     .block {
@@ -46,6 +46,7 @@ tag: CSS
         width: 100px;
         height: 100px;
         margin-bottom: 2px;
+        color: #fff;
     }
 
     span{
@@ -62,13 +63,13 @@ block 요소 옆에는 어떠한 요소도 올 수 없다는 것이 block의 기
 
 ## display: inline
 
-```html
+```
 <div class="box">inline 1</div>
 <div class="box">inline 2</div>
 <div class="box">inline 3</div>
 ```
 
-```css
+```
 .box {
   display: inline;
   background: #0066ff;
@@ -87,7 +88,7 @@ block 요소 옆에는 어떠한 요소도 올 수 없다는 것이 block의 기
     .container {
         width: 400px;
         height: 304px;
-        border: 1px solid #fff;
+        border: 1px solid #333;
     }
 
     .inline {
@@ -95,6 +96,7 @@ block 요소 옆에는 어떠한 요소도 올 수 없다는 것이 block의 기
         background: #0066ff;
         width: 100px;
         height: 100px;
+        color: #fff;
     }
 </style>
 
@@ -106,7 +108,7 @@ width와 height를 지정해줬음에도 불구하고,
 너비와 높이는 변하지 않은 것을 볼 수 있다  
 inline이라는 말 그대로, 같은 직선에 요소들이 놓여있는 것이다
 
-```css
+```
 .box {
   display: inline;
   margin-right: 50px;
@@ -123,13 +125,14 @@ inline이라는 말 그대로, 같은 직선에 요소들이 놓여있는 것이
     .inline-container {
         width: 300px;
         height: 22px;
-        border: 1px solid #fff;
+        border: 1px solid #333;
     }
 
     .inline2 {
         display: inline;
         background: #0066ff;
         margin-right: 50px;
+        color: #fff;
     }
 </style>
 
@@ -140,13 +143,13 @@ inline 속성은 한 직선에 놓여있기 때문에 선을 벗어나게 하는
 
 ## display: inline-block
 
-```html
+```
 <div class="inline-block">inline-block 1</div>
 <div class="inline-block">inline-block 2</div>
 <div class="inline-block">inline-block 3</div>
 ```
 
-```css
+```
 .inline-block {
   display: inline-block;
   width: 100px;
@@ -164,13 +167,14 @@ inline 속성은 한 직선에 놓여있기 때문에 선을 벗어나게 하는
     .container {
         width: 400px;
         height: 304px;
-        border: 1px solid #fff;
+        border: 1px solid #333;
     }
 
     .inline-block {
         display: inline-block;
         position: relative;
         background: #0066ff;
+        color: #fff;
         width: 100px;
         height: 100px;
         margin-bottom: 2px;
@@ -187,13 +191,13 @@ inline-block을 사용하면, block이 서로 옆에 있을 수 있다
 하지만, box를 살펴보면 우리가 설정하지 않은 알 수 없는 여백들이 존재한다  
 또 다른 문제점을 살펴보자
 
-```html
+```
 <div class="inline-block">inline-block 1</div>
 <div class="inline-block">inline-block 2</div>
 <div class="inline-block">inline-block 3</div>
 ```
 
-```css
+```
 .inline-block {
   display: inline-block;
   width: 100px;
@@ -218,9 +222,9 @@ inline-block을 사용하면, block이 서로 옆에 있을 수 있다
 <style>
     .problem {
         position: relative;
-        font-size: 20px;
         display:inline-block;
         background: #0066ff;
+        color: #fff;
         width: 100px;
         height: 100px;
     }
@@ -255,7 +259,8 @@ margin-left 값을 주었다고 생각해보자
     .phone-container{
         width: 250px;
         height: 350px;
-        border: 1px solid #fff;
+        border: 1px solid #333;
+        color: #fff;
     }
 </style>
 
