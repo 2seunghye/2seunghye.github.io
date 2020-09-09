@@ -7,7 +7,7 @@ tag: CSS
 ## first rule of flexbox
 
 가장 먼저 알아야 할 flex-box의 규칙이 있다  
-flex-box는 children과 직접 얘기를 하지 않는다
+flex-box는 children과 직접 얘기를 하지 않는다  
 우리는 지금껏 box의 위치, box의 margin, box의 공간 등을 직접 지정해 주었지만,  
 flexbox에서는 이 일을 하지 않아도 된다  
 flexbox에서 아이템들을 움직이고 싶을 때, 가장 먼저 해야 하는 것은  
@@ -15,9 +15,9 @@ flex container를 만들어주는 것이다
 
 ```html
 <div class="container">
-  <div class="box"><span>1</span></div>
-  <div class="box"><span>2</span></div>
-  <div class="box"><span>3</span></div>
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
 </div>
 ```
 
@@ -174,7 +174,7 @@ space-around property는 앞, 뒤, 요소들 사이에 일정한 간격을 두�
 여기서 꼭 기억해야 할 것이 있다  
 flexbox를 사용할 때 main axis와 cross axis를 항상 염두에 두어야 한다  
 flex-direction이 row라면,
-main axis는 horizontal axis(수평축)이다.  
+main axis는 horizontal axis(수평축)이 된다.  
 다시 말해, 기본 방향이 row 면 main axis는 가로가 되는 것이다  
 main axis에서는 justify-content를 사용하여 item을 움직일 수 있다
 
@@ -295,7 +295,7 @@ flex-start는 기본 값이기 때문에 굳이 쓰지 않아도 된다
 
 ## Column and Row
 
-이제 flex-direction: column에 대해 알아보자
+이제 `flex-direction: column`에 대해 알아보자
 
 ```css
 .flex-container {
@@ -333,9 +333,9 @@ flex-start는 기본 값이기 때문에 굳이 쓰지 않아도 된다
 justify-content를 사용해야 한다고 했는데,  
 여기서는 align-items를 사용한 것을 볼 수 있다
 
-그 이유는, flex-direction: column 일 때는  
+그 이유는, `flex-direction: column` 일 때는  
 main axis가 세로축이 되고, cross axis는 가로축이 되기 때문이다  
-이 말은 즉, align-items: center를 적용하였을 때,
+이 말은 즉, align-items: center를 적용하였을 때,  
 cross axis는 가로축이기 때문에 가로축을 기준으로 중간에 배치된 것이다
 
 ```css
@@ -436,7 +436,7 @@ cross axis는 가로축이기 때문에 가로축을 기준으로 중간에 배�
 
 이게 바로 가장 간단하고 중요한 flexbox의 규칙이다
 
-✨다시 정리
+✨다시 정리  
 👉🏻 **flex-direction: row**일 때,  
 justify-content >> 가로축  
 align-items >> 세로축  
