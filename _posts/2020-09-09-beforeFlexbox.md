@@ -173,7 +173,8 @@ inline 속성은 한 직선에 놓여있기 때문에 선을 벗어나게 하는
     }
 </style>
 
-inline-block은 기본적으로 inline 엘리먼트처럼 전후 줄 바꿈 없이 한 줄에 다른 요소들과 나란히 배치되면서, block 속성을 유지할 수 있게 해준다  
+inline-block은 기본적으로 inline 엘리먼트처럼 전후 줄 바꿈 없이 한 줄에 다른 요소들과 나란히 배치되면서,  
+block 속성을 유지할 수 있게 해준다  
 기본적인 inline-block 요소로는 `<button>`이나 `<select>`태그 등이 있다  
 inline-block을 사용하면, block이 서로 옆에 있을 수 있다  
 하지만, box를 살펴보면 우리가 설정하지 않은 알 수 없는 여백들이 존재한다  
@@ -218,11 +219,11 @@ inline-block을 사용하면, block이 서로 옆에 있을 수 있다
     }
 
     .problem:nth-child(2){
-        margin-left: 46.5px;
+        margin-left: 43px;
     }
 
     .problem:nth-child(3){
-        margin-left: 46.5px;
+        margin-left: 43px;
     }
 
     span{
