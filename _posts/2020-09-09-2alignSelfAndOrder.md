@@ -1,0 +1,229 @@
+---
+layout: article
+title: align-self and order
+tag: CSS
+---
+
+```html
+<div class="father">
+  <div class="children"></div>
+  <div class="children"></div>
+  <div class="children"></div>
+</div>
+```
+
+```css
+.father {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  height: 300px;
+}
+
+.children {
+  width: 100px;
+  height: 100px;
+  background: #f15c5c;
+}
+```
+
+<div class="father">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+</div>
+
+<style>
+    .father {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #333;
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .child {
+        background: #f15c5c;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+우리는 지금껏 flexbox를 사용할 때 모든 속성을 자식들을 감싸고 있는 부모 요소에 적용시켰다  
+flexbox에서 자식 요소에게 적용할 수 있는 두 가지 property가 존재한다
+
+## align-self
+
+align-self는 align-items와 비슷한 일을 한다  
+그 말은 cross axis를 중심으로 움직인다는 것이고,  
+align-items와 다른 점은 한 자식 요소에만 적용이 된다는 것이다
+
+```css
+.child:nth-child(2) {
+  align-self: center;
+}
+```
+
+ <div class="father2">
+    <div class="child2"></div>
+    <div class="child2"></div>
+    <div class="child2"></div>
+</div>
+
+<style>
+    .father2 {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #333;
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .child2 {
+        background: #f15c5c;
+        width: 100px;
+        height: 100px;
+    }
+
+    .child2:nth-child(2) {
+        align-self: center;
+    }
+</style>
+
+이렇게 작성해 주면 자식의 두 번째 요소만  
+cross axis 방향으로 가운데에 배치된 것을 확인할 수 있다
+
+```css
+.child:nth-child(2) {
+  align-self: center;
+}
+
+.child:nth-child(3) {
+  align-self: flex-end;
+}
+```
+
+ <div class="father3">
+    <div class="child3"></div>
+    <div class="child3"></div>
+    <div class="child3"></div>
+</div>
+
+<style>
+    .father3 {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #333;
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .child3 {
+        background: #f15c5c;
+        width: 100px;
+        height: 100px;
+    }
+
+    .child3:nth-child(2) {
+        align-self: center;
+    }
+
+    .child3:nth-child(3) {
+    align-self: flex-end;
+}
+</style>
+
+이렇게 작성하는 것도 물론 가능하다
+다시 정리하자면, align-self는 align-items처럼 행동한다  
+이게 바로 각각의 child에게 줄 수 있는 위치 속성이다  
+그전 글에서도 말했듯, 이렇게 적용을 하고 싶으면  
+반드시 father 요소에 height가 지정되어야 한다  
+그렇지 않으면 아무리 align 속성을 주어도 모두 가운데에 있게 된다
+
+## order
+
+오직 child에게 줄 수 있는 또 다른 property는 `order`이다  
+자식 요소들의 순서를 변경할 수 있는 속성이다
+
+<div class="father4">
+    <div class="child4"><span class="span">1</span></div>
+    <div class="child4"><span class="span">2</div>
+    <div class="child4"><span class="span">3</div>
+</div>
+
+<style>
+    .father4 {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #333;
+        color: #fff;
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .child4 {
+        position: relative;
+        background: #f15c5c;
+        width: 100px;
+        height: 100px;
+    }
+
+    .span{
+        position:absolute;top:50%;left:50%;transform: translate(-50%, -50%)  
+    }
+</style>
+
+이 속성은 HTML을 변경할 수 없을 때 유용하게 쓰인다  
+예를 들어 2와 1의 순서를 바꾸고 싶을 때  
+HTML의 변경 없이 child의 order만 변경하면 된다
+
+```css
+.child:nth-child(2) {
+  order: 1;
+}
+```
+
+이렇게 작성해 주면 어떤 일이 일어날까?
+
+<div class="father5">
+    <div class="child5"><span class="span">1</span></div>
+    <div class="child5"><span class="span">2</div>
+    <div class="child5"><span class="span">3</div>
+</div>
+
+<style>
+    .father5 {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #333;
+        color: #fff;
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .child5 {
+        position: relative;
+        background: #f15c5c;
+        width: 100px;
+        height: 100px;
+    }
+
+    .child5:nth-child(2) {
+        order: 1;
+    }
+
+    .span{
+        position:absolute;top:50%;left:50%;transform: translate(-50%, -50%)  
+    }
+</style>
+
+두 번째 요소의 order를 1로 지정해 주었기 때문에  
+2, 1, 3의 순서가 될 것이라고 예상하지만,
+1, 3, 2의 순서로 배치되었다
+
+그 이유는 자식 요소들의 **order 기본값은 0**이다  
+이 경우, 1번 box의 order는 0이고 3번 box의 order도 0이지만  
+2번 box의 order는 1이기 때문에
+1, 3, 2의 배치가 되는 것이다
+
+우리는 이렇게 flexbox에서 child에게 줄 수 있는 두 가지 property를 배워보았다
