@@ -36,7 +36,7 @@ tag: CSS
 <style>
     .container {
         width: 400px;
-        height: 308px;
+        height: 305px;
         border: 1px solid #333;
     }
 
@@ -85,12 +85,6 @@ block 요소 옆에는 어떠한 요소도 올 수 없다는 것이 block의 기
 </div>
 
 <style>
-    .container {
-        width: 400px;
-        height: 304px;
-        border: 1px solid #333;
-    }
-
     .inline {
         display: inline;
         background: #0066ff;
@@ -164,12 +158,6 @@ inline 속성은 한 직선에 놓여있기 때문에 선을 벗어나게 하는
 </div>
 
 <style>
-    .container {
-        width: 400px;
-        height: 304px;
-        border: 1px solid #333;
-    }
-
     .inline-block {
         display: inline-block;
         position: relative;
