@@ -11,13 +11,13 @@ tag: CSS
 
 ## display: block
 
-```
+```html
 <div class="box">block 1</div>
 <div class="box">block 2</div>
 <div class="box">block 3</div>
 ```
 
-```
+```css
 .box {
   display: block;
   background: #0066ff;
@@ -36,7 +36,7 @@ tag: CSS
 <style>
     .container {
         width: 400px;
-        height: 304px;
+        height: 306px;
         border: 1px solid #333;
     }
 
