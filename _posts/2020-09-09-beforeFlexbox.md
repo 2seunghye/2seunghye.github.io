@@ -47,6 +47,7 @@ tag: CSS
         height: 100px;
         margin-bottom: 2px;
         color: #fff;
+        text-align: center;
     }
 
     span{
@@ -127,6 +128,7 @@ inline이라는 말 그대로, 같은 직선에 요소들이 놓여있는 것이
         background: #0066ff;
         margin-right: 50px;
         color: #fff;
+        text-align: center;
     }
 </style>
 
@@ -163,6 +165,7 @@ inline 속성은 한 직선에 놓여있기 때문에 선을 벗어나게 하는
         position: relative;
         background: #0066ff;
         color: #fff;
+        text-align: center;
         width: 100px;
         height: 100px;
         margin-bottom: 2px;
