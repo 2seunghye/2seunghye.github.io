@@ -1,4 +1,8 @@
-# 2020-11-30 :: Component Life Cycle
+---
+layout: article
+title: React class component
+tag: React
+---
 
 # React class component
 
@@ -8,7 +12,7 @@ react class component는 **Life cycle method**를 가지고 있다
 
 component가 생성될 때, render 전에 호출되는 몇 가지 function들이 존재한다
 
-mounting, updating, unmounting이 있는데 
+mounting, updating, unmounting이 있는데
 
 mounting은 태어나는 것,
 
@@ -26,7 +30,7 @@ component가 수명을 다하는 것에는 다양한 방법이 있다
 
 아래 메서드들은 컴포넌트의 인스턴트가 생성되어 DOM 상에 삽입될 때,
 
-순서대로 호출된다 
+순서대로 호출된다
 
 - **constructor()**
 - static getDerivedStateFromProps()
@@ -52,7 +56,7 @@ React.Component를 상속한 컴포넌트의 생성자를 구현할 때에는
 
 ## render()
 
-`render()` 에서드는 클래스 컴포넌트에서 반드시 구현되어야 하는 유일한 메서드이다 
+`render()` 에서드는 클래스 컴포넌트에서 반드시 구현되어야 하는 유일한 메서드이다
 
 이 메서드가 호출되면 `this.props` 와 `this.state` 값을 활용하여 아래 것들 중 하나를 반환해야 한다
 
@@ -76,7 +80,7 @@ React.Component를 상속한 컴포넌트의 생성자를 구현할 때에는
 
 `componentDidMount()` 에서 즉시 setState()를 호출하는 경우도 있다
 
-이로 인해 추가적인 렌더링이 발생하지만, 브라우저가 화면을 갱신하기 전에 이루어 진다 
+이로 인해 추가적인 렌더링이 발생하지만, 브라우저가 화면을 갱신하기 전에 이루어 진다
 
 이 경우 `render()` 가 두 번 호출되지만, 사용자는 그 중간 과정을 볼 수 없을 것이다
 
@@ -119,7 +123,7 @@ class App extends React.Component {
 
 즉 component가 내 Website에 왔을 때 `constructor()` 함수가 호출되며,
 
-console 창에 "hello"가 찍히는 것을 볼 수 있다 
+console 창에 "hello"가 찍히는 것을 볼 수 있다
 
 그 이후 `render()` 함수가 실행되며, console창에 "rendering"이 찍힌다
 
